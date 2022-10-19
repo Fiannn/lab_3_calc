@@ -7,6 +7,10 @@ let calculator = {
       return this.a * this.b;
   },
 
+  sub() {
+    return this.a - this.b;
+  },
+
   read() {
       this.a = +prompt('a?', 0);
       this.b = +prompt('b?', 0);
@@ -16,3 +20,4 @@ let calculator = {
 calculator.read();
 alert( calculator.sum() );
 alert( calculator.mul() );
+alert( calculator.sub() );
